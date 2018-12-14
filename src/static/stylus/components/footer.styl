@@ -1,2 +1,41 @@
 .footer
-    color red
+    background-color $purple
+    padding-bottom 10px
+    &__top
+        clearfix()
+    &__left
+        float left
+        width 50%
+    &__right
+        float right
+        width 50%
+    &__left
+    &__right
+        +below($tablet)
+            float none
+            width 100%
+    &__logo
+        padding-top 21px
+        +below($tablet)
+            padding-top: 6px
+            margin-bottom 6px
+    &__top-menu
+        +below($tablet)
+            margin-bottom 6px
+    &__bottom
+        text-align right
+        vertical-align top
+        +below($tablet)
+            text-align center
+.developer
+    display inline-block
+    background-color $orange
+    padding 0 6px
+    color #373737
+    font-size 17px
+    font-weight 500
+    
+    transition color .25s, background .25s ease-in-out
+    &:hover
+        color #fff
+        background-color $very-dark_purple

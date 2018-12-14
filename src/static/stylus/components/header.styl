@@ -1,2 +1,28 @@
 .header
-    color green
+    background-color $purple
+    &__top
+        clearfix()
+        padding-top 16px
+        margin-bottom 24px
+        +below($tablet)
+            margin-bottom 0
+    &__bottom
+        // 
+    &__left
+        float left
+    &__right
+        float right
+    &__right
+    &__left
+        +below($tablet)
+            float none
+            display block
+    &__logo
+    &__top-menu
+        +below($tablet)
+            margin-bottom 14px
+    &__main-menu
+        margin-bottom 24px
+        +below($tablet)
+            display none
+

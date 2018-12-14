@@ -3,10 +3,19 @@
     position fixed
     top 15px
     right 15px
-    width 45px
+    width 46px
+    height 46px
     z-index 100
     cursor pointer
+    background $orange url('../img/open-menu.png') 50% no-repeat
+    background-size 100%
+    object-fit cover
+    outline 1px solid #555
+    display none
+    +below($tablet)
+        display block
     &__item
+        display none
         width 100%
         height 6px
         margin-bottom 4px
@@ -39,12 +48,13 @@
     width 100%
     max-width $panel-width
     height 100%
-    background-color #444
+    background-color $dark_purple
     color #fff
     transition transform $timing
     overflow-x hidden
     &.is-opened
         transform translateX(- $panel-width)
+        box-shadow -2px 0 10px 4px #2d154f
     &__close
         position relative
         width 45px

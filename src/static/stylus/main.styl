@@ -8,3 +8,287 @@
 @import 'components/*'
 
 // ====== Вёрстка
+
+.page
+    &__main
+        background-color $green
+        // background url('../img/bg.jpg') 50% no-repeat
+    &__left
+        float left
+        width 65%
+        padding-right 5px
+        +below($desktop)
+            float none
+            width 100%
+            padding 0
+    &__right
+        float right
+        width 35%
+        padding-left 5px
+        +below($desktop)
+            display none
+    &__title
+        font-size 40px
+        line-height 1
+        padding 6px 0 0 0
+        margin 0
+        font-weight 600
+        color #222
+        margin-bottom 12px
+        +below($desktop)
+            font-size 37px
+            margin-bottom 6px
+        +below($tablet)
+            font-size 26px
+            margin-bottom 3px
+
+.pagination
+    font-size 0
+    margin-bottom 12px
+    &__item
+        display inline-block
+        padding 0
+        margin 0
+        &:last-child
+            a
+                font-weight 600
+                &::after
+                    content none
+                    display none
+    &__link
+        display block
+        padding 0 15px 0 5px
+        font-size 14px
+        background orange
+        position relative
+        &::after
+            content ''
+            display block
+            position absolute
+            top 4px
+            right 0
+            width 10px
+            height 15px
+            background url('../img/pagination-arrow.png') 50% no-repeat
+            background-size cover
+
+.main-logo
+    &__text
+        font-size 40px
+        line-height 1
+        padding 0
+        margin 0
+        color #fff
+        font-weight 500
+        +below($desktop)
+            font-size 35px
+        +below($tablet)
+            font-size 25px
+
+.top-menu
+    tr
+        td
+            padding 0 2px
+    &__link
+        display block
+        background-color $orange
+        padding 2px 6px
+        font-weight 600
+        transition color .25s, background .25s ease-in-out
+        &:hover
+            color #fff
+            background-color $very-dark_purple
+
+
+.articles
+    padding-top 20px
+    &__top
+        clearfix()
+        margin-bottom 12px
+    &__left
+        float left
+        width 50%
+    &__right
+        float right
+        text-align right
+        width 50%
+    &__info
+        font-size 20px
+    &__link
+        font-size 16px
+        text-decoration underline
+    &__list
+        display block
+        +below($desktop)
+            text-align center
+            margin 0 -15px
+        +below($tablet)
+            margin 0
+
+.article
+    display inline-block
+    width 49%
+    font-size 0
+    margin-bottom 40px
+    padding-right 20px
+    +below($desktop)
+        padding 0 10px
+        width 49%
+        text-align left
+    +below($tablet)
+        width 100%
+        padding 0
+    &__top
+        clearfix()
+        margin-bottom 12px
+    &__left
+        float left
+    &__right
+        float right
+        width 58%
+        line-height 1
+    &__left
+    &__right
+        +below($desktop)
+            float none
+            width 100%
+    &__bottom
+        display block
+
+    &__image
+        width 140px
+        min-height 87px
+        background-color #0b7f4e
+        +below($desktop)
+            width 100%
+            margin-bottom 10px
+        img
+            width 100%
+            display block
+            object-fit cover
+    &__views
+        font-size 14px
+        margin-bottom 6px
+        span
+            position relative
+            padding-left 6px
+            &::after
+                content '';
+                display block
+                position absolute
+                top 3px
+                right -20px
+                width 15px
+                height 15px
+                background url('../img/eye-icon.png') 50% no-repeat
+                background-size cover
+    &__title
+        font-size 17px
+        margin-bottom 6px
+    &__categorie
+        font-size 16px
+        margin-bottom 12px
+    &__link
+        font-size 15px
+        text-decoration underline
+    &__text
+        font-size 15px
+        line-height 1.2
+
+
+
+.page
+    &__sidebar
+        padding-top 20px
+        padding-left 35px
+.sidebar-news
+.sidebar-news-top
+    margin-bottom 45px
+
+.sidebar-news
+.sidebar-news-top
+.sidebar-news-gaming
+    &__item
+        margin-bottom 12px
+        position relative
+        padding-left 6px
+        &::after
+            content '';
+            display block
+            position absolute
+            top 0
+            left -6px
+            height 100%
+            width 3px
+            background $very-dark_purple
+    &__top
+        clearfix()
+        margin-bottom 12px
+    &__left
+        float left
+    &__right
+        line-height 1
+        float left
+    &__bottom
+        display block
+        width 100%
+    &__info
+        font-size 20px
+        margin-bottom 12px
+    &__title
+        font-size 17px
+        margin-bottom 10px
+    &__image
+        margin-right 6px
+        width 160px
+        img
+            width 100%
+            display block
+            object-fit cover
+    &__views
+        font-size 14px
+        margin-bottom 10px
+        span
+            position relative
+            padding-left 6px
+            &::after
+                content '';
+                display block
+                position absolute
+                top 3px
+                right -20px
+                width 15px
+                height 15px
+                background url('../img/eye-icon.png') 50% no-repeat
+                background-size cover
+    &__categorie
+        font-size: 16px
+        margin-bottom: 14px
+    &__link
+        font-size 15px
+        text-decoration underline
+    &__text
+        font-size 15px
+        line-height 1.2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
