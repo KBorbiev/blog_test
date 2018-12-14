@@ -2,7 +2,7 @@ var
 // Основа
     gulp         = require ('gulp'),
     plumber      = require ('gulp-plumber'),
-    browserSync  = require('browser-sync').create(),
+    browserSync  = require ('browser-sync').create(),
 
 // Файлы
     rename   = require ('gulp-rename'),
@@ -178,7 +178,7 @@ gulp.task('clear', function (){
     .pipe(clear())
 });
 
-gulp.task('default', ['export'], function (){
+gulp.task('default', function (){
 
     // Сервер
     browserSync.init({
@@ -212,15 +212,4 @@ gulp.task('default', ['export'], function (){
 
 });
 
-gulp.task('export', function (){
 
-    'pug',
-    'styles',
-    'script',
-    'assets-images',
-    'assets-upload',
-    'assets-fonts'
-
-});
-
-// git rdm-1

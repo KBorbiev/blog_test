@@ -9,7 +9,7 @@
 
     li
         display block
-        border 1px solid border_color
+        border 1px solid $purple
         margin-bottom -1px
         border-right none
         border-left none
@@ -17,10 +17,10 @@
         display block
         padding 10px 15px
         text-decoration none
-        background-color bg_color
+        background-color $very-dark_purple
         color font_color
         &:hover
-            background-color bg_hover_color
+            background-color $dark_purple
     &__level
         position relative
     &__left
@@ -36,9 +36,9 @@
         position relative
         cursor pointer
         height 100%
-        background-color bg_color
+        background-color $very-dark_purple
         &:hover
-            background-color bg_hover_color
+            background-color $dark_purple
         &:before
             content ''
             display block
@@ -62,7 +62,7 @@
         overflow hidden
         display none
         padding-left 10px
-        background-color border_color
+        background-color #2d154f
         font-size 0.9em
 
     // Ограничение бокового отступа глубже 4-го уровня вложенности

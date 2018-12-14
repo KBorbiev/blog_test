@@ -1,0 +1,18 @@
+.main-menu
+    tr
+        td
+            display inline-table
+            margin 0 4px
+            &:first-child
+                margin-left 0
+            &:last-child
+                margin-right 0
+    &__link
+        display block
+        background-color $orange
+        padding 2px 6px
+        font-weight 600
+        transition color .25s, background .25s ease-in-out
+        &:hover
+            color #fff
+            background-color $very-dark_purple
